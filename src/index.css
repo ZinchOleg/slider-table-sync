@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(
+      217deg,
+      rgba(255, 0, 0, 0.8),
+      rgba(255, 0, 0, 0) 70.71%
+    ), linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+}
+
+/* .feature-value-row {display: flex;} */
+
+.app {
+  margin: 0 auto;
+  padding: 1rem;
+  width: 768px;
+}
+
+.bg {
+  position: absolute;
+  left: 35%;
+  bottom: 0%;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.table-wrapper {
+  overflow: scroll;
+  scrollbar-width: none;
+  margin-top: 32px;
+  border-collapse:collapse;
+  
+}
+
+.table-wrapper::-webkit-scrollbar {
+  width: 0px;
+}
+ 
+.table-wrapper::-webkit-scrollbar-track {
+  background: rgba(165, 165, 165, 0.5);
+  border-radius: 20px;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb {
+  background-color: rgba(82, 82, 82, 0.5);
+  border-radius: 20px;
+} 
+
+table {
+  border-collapse:collapse;
+  overflow: hidden;
+}
+
+td {
+  border: 1px solid gray;
+  padding: 0.25rem;
+  text-align: left;
+}
+
+th {
+  text-align: center;
+}
+
+.feature-name {
+  position: relative;
+}
+
+.slide-item {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2, p {
+  margin: 0;
+}
+
+.swiper-pagination{
+  position: absolute !important;
+  bottom: 20% !important;
+}
+
+.info-block {
+  border: 1px solid gray;
+  padding: 4px;
+}
+
