@@ -23,7 +23,7 @@ function App() {
         scrollLeft={scrollLeft}
         setOffsetX={setOffsetX}
       />
-      <img src="/kisspng-mazda-rx-7-sports-car-mazda-rx-3-rx7-5b4ccb6d4b4ec1.4833586315317594693085.png" className="bg"/>
+      <img src="./kisspng-mazda-rx-7-sports-car-mazda-rx-3-rx7-5b4ccb6d4b4ec1.4833586315317594693085.png" className="bg"/>
     </div>
   );
 }
