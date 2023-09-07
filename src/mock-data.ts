@@ -4,7 +4,7 @@ const items: Items = [
   {
     id: 1,
     title: "VW Golf 2 GTI",
-    imageUrl: `https://youngtimercar.eu/wp-content/uploads/2019/07/R223183-16-1200x800.jpg`,
+    imageUrl: `https://www.netcarshow.com/Volkswagen-Golf_II_GTI-1983-1600-10.jpg`,
     price: 3000,
     features: [
       {

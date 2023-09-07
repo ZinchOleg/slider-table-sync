@@ -10,7 +10,9 @@ const useDebounce = (fn: Function, delay: number) => {
     }
   }, []);
 
-  useEffect(() => clearTimer, []);
+  useEffect(() => {
+    clearTimer();
+  }, []);
 
   const cb = useCallback(
     (...args: any[]) => {

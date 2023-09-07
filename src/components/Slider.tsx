@@ -55,7 +55,6 @@ function Slider({ items, setSlideWidth, setScrollLeft, offsetX }: Props) {
       }
     }
     
-    console.log(i);
     if (items[i]) {
       swiperRef.current.slideTo(i);
     }
