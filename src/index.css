@@ -6,9 +6,7 @@
 
 body {
   margin: 0;
-  height: 100vh;
   overflow: hidden;
-  position: relative;
   background: 
   linear-gradient(217deg, rgba(255, 0, 0, 0.7), rgba(255, 0, 0, 0) 70%),
   linear-gradient(127deg, rgba(0, 255, 0, 0.7), rgba(0, 255, 0, 0) 70%),
@@ -17,14 +15,16 @@ body {
 
 .app {
   margin: 0 auto;
-  padding: 1rem;
-  width: 768px;
+  padding: 24px;
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
 }
 
 .bg {
   position: absolute;
-  left: 35%;
-  bottom: 0%;
+  right: -5%;
+  bottom: 7%;
   pointer-events: none;
 }
 
@@ -33,57 +33,23 @@ img {
   object-fit: cover;
 }
 
-.table-wrapper {
-  overflow: scroll;
-  scrollbar-width: none;
-  margin-top: 32px;
-  border-collapse:collapse;
-  
-}
-
-.table-wrapper::-webkit-scrollbar {
-  width: 0px;
-}
- 
-.table-wrapper::-webkit-scrollbar-track {
-  background: rgba(165, 165, 165, 0.5);
-  border-radius: 20px;
-}
-
-.table-wrapper::-webkit-scrollbar-thumb {
-  background-color: rgba(82, 82, 82, 0.5);
-  border-radius: 20px;
-} 
-
-table {
-  border-collapse:collapse;
-  overflow: hidden;
-}
-
-td {
-  border: 1px solid gray;
-  padding: 0.25rem;
-  text-align: left;
-}
-
-th {
-  text-align: center;
-}
-
-.feature-name {
-  position: relative;
-}
-
 .slide-item {
   display: flex;
   flex-direction: column;
-  gap: 36px;
+  gap: 20px;
 }
 
 .item-info {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  align-self: center;
+  gap: 8px;
+  width: fit-content;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
 }
 
 h1 {
@@ -96,11 +62,22 @@ h2, p {
 
 .swiper-pagination{
   position: absolute !important;
-  bottom: 20% !important;
+  bottom: 16% !important;
 }
 
 .info-block {
   border: 1px solid gray;
-  padding: 4px;
 }
 
+.table-title {
+  padding: 10px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid gray;
+  padding: 6px 12px;
+}
