@@ -6,8 +6,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import type { Swiper as SwiperType } from 'swiper';
 import SliderImage from "./components/SliderImage";
 
-const SLIDES_PER_VIEW = 3;
-
 const App = () => {
   const [firstSwiper, setFirstSwiper] = useState<SwiperType | null>(null);
   const [secondSwiper, setSecondSwiper] = useState<SwiperType | null>(null);
@@ -30,15 +28,15 @@ const App = () => {
   return (
     <div className="app">
       <Swiper
+        className="img-slider"
         onSwiper={setFirstSwiper}
         controller={{ control: secondSwiper }}
         modules={[Controller, Navigation, Pagination]}
-        navigation={SLIDES_PER_VIEW < data.length}
-        pagination={ SLIDES_PER_VIEW < data.length ? {clickable: true} : undefined }
-        // slidesPerView={SLIDES_PER_VIEW}
+        navigation
+        pagination={{clickable: true}}
         breakpoints={sliderSettings}
         spaceBetween={12}
-        // slidesPerView='auto'
+        loop
       >
         {
           data.map((item) => (
@@ -52,15 +50,13 @@ const App = () => {
       <h1>Comparison table</h1>
 
       <Swiper
+        className="info-slider"
         onSwiper={setSecondSwiper}
         controller={{ control: firstSwiper }}
         modules={[Controller, Navigation, Pagination]}
-        // navigation={3 < data.length}
-        pagination={ 3 < data.length ? {clickable: true } : undefined }
-        // slidesPerView={3}
+        pagination={{clickable: true }}
         breakpoints={sliderSettings}
-        // slidesPerView='auto'
-
+        loop
       >
         {
           data.map((item) => (

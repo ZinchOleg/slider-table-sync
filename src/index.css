@@ -36,7 +36,7 @@ img {
 .slide-item {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 40px;
 }
 
 .item-info {
@@ -60,9 +60,22 @@ h2, p {
   margin: 0;
 }
 
-.swiper-pagination{
-  position: absolute !important;
-  bottom: 16% !important;
+.img-slider .swiper-pagination{
+  bottom:18% !important;
+}
+
+.info-slider .swiper-pagination{
+  bottom: -30px !important;
+}
+
+.info-slider {
+  overflow-y: visible !important;
+}
+
+.img-slider .swiper-button-prev, 
+.img-slider .swiper-button-next {
+  top: unset !important;
+  bottom: 4px !important;
 }
 
 .info-block {
