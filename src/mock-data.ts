@@ -39,7 +39,7 @@ const items: Items = [
     // imageUrl: `https://cdn.riastatic.com/photosnewr/auto/photo/fiat-brava__326057600-460x345.jpg`,
     // imageUrl: `https://cdn.riastatic.com/photos/auto/photo/21062/2106210/210621054/210621054fx.jpg`,
     // imageUrl: `https://cars.ua/thumb/car/20181121/w440/h300/q80/kupit-fiat-brava-rokitnoe-1518106.jpg`,
-    imageUrl: `https://mobile.donanimhaber.com/images/upfiles/196245/371D11E6B45741CBA1CA4113EB86CEC3.jpg`,
+    imageUrl: `https://live.staticflickr.com/7280/7560787126_20deda79de_h.jpg`,
     price: 2500,
     features: [
       {
