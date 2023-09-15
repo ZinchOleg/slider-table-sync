@@ -7,7 +7,7 @@
 body {
   margin: 0;
   overflow: hidden;
-  background: 
+  background:
   linear-gradient(217deg, rgba(255, 0, 0, 0.7), rgba(255, 0, 0, 0) 70%),
   linear-gradient(127deg, rgba(0, 255, 0, 0.7), rgba(0, 255, 0, 0) 70%),
   linear-gradient(336deg, rgba(0, 0, 255, 0.7), rgba(0, 0, 255, 0) 70%);
@@ -25,6 +25,8 @@ body {
   position: absolute;
   right: -5%;
   bottom: 7%;
+  height: auto;
+  max-width: 100%;
   pointer-events: none;
 }
 
@@ -72,10 +74,11 @@ h2, p {
   overflow-y: visible !important;
 }
 
-.img-slider .swiper-button-prev, 
+.img-slider .swiper-button-prev,
 .img-slider .swiper-button-next {
   top: unset !important;
   bottom: 4px !important;
+  --swiper-navigation-size: 44px;
 }
 
 .info-block {
@@ -93,4 +96,49 @@ h2, p {
   justify-content: space-between;
   border-top: 1px solid gray;
   padding: 6px 12px;
+}
+
+@media (max-height: 1000px) {
+  .bg{
+    max-width: 50%;
+  }
+}
+
+@media (max-height: 890px) {
+  .bg {
+    max-width: 40%;
+  }
+}
+
+@media (max-height: 800px) {
+  .bg{
+    max-width: 35%;
+  }
+
+  .item-info{
+    display: none;
+  }
+
+  .swiper-slide {
+    font-size: 10px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  .slide-item{
+    padding-bottom: 50px;
+  }
+
+  .swiper-pagination-bullet {
+    --swiper-pagination-bullet-inactive-opacity: 1;
+  }
+
+  .img-slider .swiper-button-prev,
+  .img-slider .swiper-button-next {
+    top: 50% !important;
+    --swiper-navigation-size: 36px;
+    --swiper-navigation-sides-offset: 0;
+  }
 }
