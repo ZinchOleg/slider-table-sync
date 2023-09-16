@@ -21,6 +21,11 @@ body {
   height: 100vh;
 }
 
+.sliderWrapper{
+  overflow: scroll;
+  height: 100vh;
+}
+
 .bg {
   position: absolute;
   right: -5%;
@@ -115,6 +120,11 @@ h2, p {
     max-width: 35%;
   }
 
+  .sliderWrapper{
+    overflow: hidden;
+    min-height: 90%;
+  }
+
   .item-info{
     display: none;
   }
@@ -140,5 +150,16 @@ h2, p {
     top: 50% !important;
     --swiper-navigation-size: 36px;
     --swiper-navigation-sides-offset: 0;
+  }
+}
+
+@media (max-height: 660px) {
+  .sliderWrapper{
+    overflow: scroll;
+    height: 100vh;
+  }
+
+  .bg {
+    display: none;
   }
 }

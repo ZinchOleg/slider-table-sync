@@ -23,7 +23,7 @@ const App = () => {
     };
 
     return (<div className="app">
-            <div>
+            <div className="sliderWrapper">
                 <Swiper
                     className="img-slider"
                     onSwiper={setFirstSwiper}
